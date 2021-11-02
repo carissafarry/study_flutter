@@ -18,16 +18,11 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[200],
       ),
       body: Center(
-        child: Text(
-          'hello ninjas!',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.brown,
-            fontFamily: 'ZenAntiqueSoft',
-          ),
-        ),
+        // child: Image(
+        //   image: AssetImage('assets/p1.jfif'),
+        // ),
+        child: Image.asset('assets/p1.jfif'),
+        // child:  Image.network('https://images.unsplash.com/photo-1635241903012-7b313beb81fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
