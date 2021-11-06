@@ -17,40 +17,73 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.brown[200],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Row(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                color: Colors.cyan,
-                child: Text('one'),
-              ),
-            ],
+          Expanded(
+            child: Image.asset('assets/p1.jfif'),
+            flex: 4,
           ),
-          // * Penambahan row widget menyebabkan lebar kolom menjadi sama dengan row, yaitu full page
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
-              Text('hello'),
-              Text('world'),
-            ],
+          Expanded(
+            flex: 6,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.pinkAccent,
-            child: Text('two'),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40),
-            color: Colors.amber,
-            child: Text('three'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
           ),
         ],
       ),
+
+      // Column(
+      //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //   crossAxisAlignment: CrossAxisAlignment.end,
+      //   children: <Widget>[
+      //     Row(
+      //       mainAxisAlignment: MainAxisAlignment.center,
+      //       children: [
+      //         Container(
+      //           padding: EdgeInsets.all(20),
+      //           color: Colors.cyan,
+      //           child: Text('one'),
+      //         ),
+      //       ],
+      //     ),
+      //     // * Penambahan row widget menyebabkan lebar kolom menjadi sama dengan row, yaitu full page
+      //     Row(
+      //       mainAxisAlignment: MainAxisAlignment.center,
+      //       children: const <Widget>[
+      //         Text('hello'),
+      //         Text('world'),
+      //       ],
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(30),
+      //       color: Colors.pinkAccent,
+      //       child: Text('two'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(40),
+      //       color: Colors.amber,
+      //       child: Text('three'),
+      //     ),
+      //   ],
+      // ),
 
       // Row(
       //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
