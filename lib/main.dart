@@ -21,11 +21,16 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Container(
-            padding: EdgeInsets.all(20),
-            color: Colors.cyan,
-            child: Text('one'),
-          ),  
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.cyan,
+                child: Text('one'),
+              ),
+            ],
+          ),
           // * Penambahan row widget menyebabkan lebar kolom menjadi sama dengan row, yaitu full page
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
