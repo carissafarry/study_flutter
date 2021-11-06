@@ -17,23 +17,53 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.brown[200],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Text('hello, world'),
-          FlatButton(
-            onPressed: () {},
-            child: Text('click me'),
-            color: Colors.amber,
+          Container(
+            padding: EdgeInsets.all(20),
+            color: Colors.cyan,
+            child: Text('one'),
+          ),  
+          // * Penambahan row widget menyebabkan lebar kolom menjadi sama dengan row, yaitu full page
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const <Widget>[
+              Text('hello'),
+              Text('world'),
+            ],
           ),
           Container(
-            color: Colors.cyan,
             padding: EdgeInsets.all(30),
-            child: Text('inside container'),
+            color: Colors.pinkAccent,
+            child: Text('two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40),
+            color: Colors.amber,
+            child: Text('three'),
           ),
         ],
       ),
+
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   children: <Widget>[
+      //     Text('hello, world'),
+      //     FlatButton(
+      //       onPressed: () {},
+      //       child: Text('click me'),
+      //       color: Colors.amber,
+      //     ),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(30),
+      //       child: Text('inside container'),
+      //     ),
+      //   ],
+      // ),
 
       // Padding(
       //   padding: EdgeInsets.all(90),
